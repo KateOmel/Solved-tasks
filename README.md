@@ -1,7 +1,8 @@
 # Solved-tasks
-* task 1
+#### Be Concise I - The Ternary Operator
 ```javascript
-const a = 123;
-let b = 321;
-//Hello world!
+function describeAge(a) {
+  let s="You're a(n) ";
+  return (a<=12) ? s+'kid': (a<=17) ? s+"teenager": (a<=64) ? s+"adult": s+"elderly";
+}
 ```
