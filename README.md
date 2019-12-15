@@ -4,5 +4,4 @@
 const a = 123;
 let b = 321;
 //Hello world!
-//Hello!
 ```
