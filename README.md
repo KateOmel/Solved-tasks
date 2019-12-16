@@ -51,7 +51,7 @@ case 9:
 return result;
 }
 ```
-####Draw stairs
+#### Draw stairs
 ```javascript
 function drawStairs(n) {
  let s = '';
