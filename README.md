@@ -51,3 +51,17 @@ case 9:
 return result;
 }
 ```
+####Draw stairs
+```javascript
+function drawStairs(n) {
+ let s = '';
+ for (let i = 1; i < n; i++) {
+  s+= "I\n";
+     for (let j = 1; j <= i; j++) {
+       s+= ' ';
+      }
+  }
+  s+="I";
+  return s;
+}
+```
