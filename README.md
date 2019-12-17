@@ -65,3 +65,15 @@ function drawStairs(n) {
   return s;
 }
 ```
+#### Squares sequence
+```javascript
+function squares(x, n) {
+if (n <= 0) return [];
+let arr = new Array(n);
+arr[0] = x;
+for (let i = 1; i < n; i++) {
+  arr[i] =  Math.pow(arr[i-1], 2);  
+ }
+return arr;
+}
+```
