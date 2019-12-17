@@ -77,3 +77,10 @@ for (let i = 1; i < n; i++) {
 return arr;
 }
 ```
+#### Find the next perfect square!
+```javascript
+function findNextSquare(sq) {
+ if (Math.sqrt(sq) % 1 !== 0)  return -1;
+ return (Math.sqrt(sq) + 1) ** 2;
+}
+```
