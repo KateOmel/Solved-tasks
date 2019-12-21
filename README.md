@@ -103,3 +103,23 @@ for (let i = 1; i < arr.length; i++) {
    return null;
 }
 ```
+#### Remove the minimum
+```javascript
+function removeSmallest(numbers) {
+  //throw "TODO: removeSmallest";
+  let min = numbers[0];
+  let index = 0;
+  for (let i = 1; i < numbers.length; i++) {
+   if ( numbers[i] < min) {
+    min = numbers[i];
+    index = i;
+     }
+  }
+  let newArr = [];
+  for (let i = 0; i < numbers.length; i++) {
+   if ( i === index) continue;
+   newArr.push(numbers[i]);
+     }
+  return newArr;
+}
+```
