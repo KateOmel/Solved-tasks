@@ -93,3 +93,13 @@ function include(arr, item){
     return false;
 }
 ```
+#### Find the first non-consecutive number
+```javascript
+function firstNonConsecutive (arr) {
+for (let i = 1; i < arr.length; i++) {
+ if ( arr[i] === arr[i-1] + 1) { continue; }
+ else return arr[i]; 
+   }
+   return null;
+}
+```
