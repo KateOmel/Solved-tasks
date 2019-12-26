@@ -151,3 +151,15 @@ let arr = s.split('');
   
 }
 ```
+#### Unique In Order
+```javascript
+var uniqueInOrder=function(iter){
+if (iter === '') return [];
+  let arr = [ iter[0] ];
+  for (let i = 1; i < iter.length; i++) {
+  if (iter[i] === iter[i-1]) continue;
+  arr.push( iter[i] );
+  }
+  return arr;
+}
+```
