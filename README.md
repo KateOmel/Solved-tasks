@@ -141,3 +141,13 @@ let arr = ages.sort( (a, b) => a - b);
 return [arr[arr.length - 2], arr[arr.length - 1] ];
 }
 ```
+#### Mumbling
+```javascript
+function accum(s) {
+s = s.toUpperCase();
+let arr = s.split('');
+	//console.log(arr);
+  return arr.map( (el,i) => el += el.toLowerCase().repeat(i)).join('-');
+  
+}
+```
