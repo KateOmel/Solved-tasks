@@ -163,3 +163,18 @@ if (iter === '') return [];
   return arr;
 }
 ```
+#### Numbers to Letters
+```javascript
+function switcher(x){
+let arr = [];
+  for (let i = 0; i < 26; i++) {
+  arr.push( String.fromCodePoint(97 + i) );
+  }
+  arr.reverse();
+  arr.unshift(0);
+  arr.push('!','?',' ');
+  
+  return x.map( el => arr[+el]).join('');
+ 
+}
+```
