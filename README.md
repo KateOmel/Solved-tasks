@@ -191,3 +191,15 @@ arr[i] = arr[i].join('');
 return arr.join(' ');
 }
 ```
+#### Regex validate PIN code
+````javascript
+function validatePIN (pin) {
+if (pin.length !== 4 && pin.length !== 6) return false;
+  for (let i = 0; i < pin.length; i++) {  
+  if (pin[i].codePointAt(0) > 47 && pin[i].codePointAt(0)< 58){
+  continue; }
+  else return false;
+  }
+  return true;
+}
+````
