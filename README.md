@@ -178,3 +178,16 @@ let arr = [];
  
 }
 ```
+#### Thinking & Testing : Something capitalized
+```javascript
+function testit(s){
+if (s === '') return '';
+let arr = s.split(' ');
+for (let i = 0; i< arr.length; i++) {
+arr[i] = arr[i].split('');
+arr[i][ arr[i].length -1] = arr[i][ arr[i].length -1].toUpperCase();
+arr[i] = arr[i].join('');
+}
+return arr.join(' ');
+}
+```
