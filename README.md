@@ -203,3 +203,9 @@ if (pin.length !== 4 && pin.length !== 6) return false;
   return true;
 }
 ````
+#### Get number from string
+````javascript
+function getNumberFromString(s) {
+return +s.replace( /\D/g, '');
+}
+````
