@@ -209,3 +209,9 @@ function getNumberFromString(s) {
 return +s.replace( /\D/g, '');
 }
 ````
+#### Replace all dots
+```javascript
+var replaceDots = function(str) {
+return str.replace(/['.']/g, '-');
+}
+```
