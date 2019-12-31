@@ -223,3 +223,9 @@ s = s.slice(0, -1); }
  return s;
 }
 ```
+#### Vowel remover
+```javascript
+function shortcut(string){
+ return string.replace(/[a,e,i,o,u]/g, ''); 
+ }
+```
