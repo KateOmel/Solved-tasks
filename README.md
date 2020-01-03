@@ -229,3 +229,14 @@ function shortcut(string){
  return string.replace(/[a,e,i,o,u]/g, ''); 
  }
 ```
+#### Can Santa save Christmas?
+```javascript
+function determineTime(durations){
+let res = 0;
+for (let i = 0; i < durations.length; i++) {
+let arr = durations[i].split(':');
+res += +arr[0]*60*60 + +arr[1]*60 + +arr[2];
+ }
+return res<= 24*60*60; 
+}
+```
