@@ -265,3 +265,19 @@ welsh: 'Croeso',
 return greeting[language] === undefined ? 'Welcome' : greeting[language];
 }
 ```
+#### arithmetic
+```javascript
+function arithmetic(a, b, operator){
+  switch(operator) {
+    case 'add':
+      return a + b;
+    case 'subtract':
+      return a - b;
+    case 'multiply':
+      return a * b;
+    case 'divide':
+      return a / b;
+  }
+}
+
+```
