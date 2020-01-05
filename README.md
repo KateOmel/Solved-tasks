@@ -287,3 +287,15 @@ if (candidate.minSalary === undefined || job.maxSalary === undefined) return err
   return 0.9*candidate.minSalary <= job.maxSalary;
 }
 ```
+#### Numbers to Objects
+```javascript
+function numObj(s){
+let arr = [];
+for (let i = 0; i < s.length; i++) {
+let obj = {};
+obj[s[i].toString()] = String.fromCharCode(s[i]);
+arr.push(obj);
+}
+return arr;  
+}
+```
