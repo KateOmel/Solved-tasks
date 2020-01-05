@@ -279,5 +279,11 @@ function arithmetic(a, b, operator){
       return a / b;
   }
 }
-
+```
+#### Job Matching #1
+```javascript
+function match(candidate, job) {
+if (candidate.minSalary === undefined || job.maxSalary === undefined) return error;
+  return 0.9*candidate.minSalary <= job.maxSalary;
+}
 ```
