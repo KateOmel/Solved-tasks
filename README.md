@@ -299,3 +299,16 @@ arr.push(obj);
 return arr;  
 }
 ```
+#### How many days are we represented in a foreign country?
+```javascript
+function daysRepresented(trips){
+let arr = [];
+for (let i = 0; i < trips.length; i++) {
+for (let j = trips[i][0]; j <= trips[i][1]; j++) {
+arr.push(j);
+ }
+}
+arr = arr.filter( (el,i) => arr.indexOf(el) === i );
+return arr.length;
+}
+```
