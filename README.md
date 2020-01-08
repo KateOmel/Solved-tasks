@@ -331,3 +331,18 @@ for (let i = 0; i < input.length; i++){
   return count <= 1;
 }
 ```
+#### What is my name score? #1
+```javascript
+function nameScore(name){
+let obj = {};
+let score = 0;
+  
+  for (let i = 0; i < name.length; i++){  
+    for (let key in alpha) {    
+       if ( key.includes( name[i].toUpperCase()) ) score += alpha[key];     
+    } 
+  }
+  obj[name] = score;
+  return obj;
+}
+```
