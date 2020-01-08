@@ -312,3 +312,22 @@ arr = arr.filter( (el,i) => arr.indexOf(el) === i );
 return arr.length;
 }
 ```
+#### Permute a Palindrome
+```javascript
+function permuteAPalindrome (input) { 
+let obj = {};
+let count = 0;
+for (let i = 0; i < input.length; i++){
+  
+     if (obj[input[i]] === undefined) obj[input[i]] = 1;
+     else obj[input[i]] += 1;
+}
+  
+  for (let key in obj){
+    if ( obj[key] % 2 === 0) continue;
+    else count++;
+  }  
+ 
+  return count <= 1;
+}
+```
