@@ -363,3 +363,27 @@ console.log(arr);
    return result.sort()[0];   
    }
 ```
+#### The Office II - Boredom Score
+```javascript
+function boredom(staff){
+let score = 0;
+   let obj = {
+accounts : 1,
+finance : 2,
+canteen : 10,
+regulation : 3,
+trading : 6,
+change : 6,
+IS : 8,
+retail : 5,
+cleaning : 4,
+'pissing about' : 25, 
+   }
+for (let name in staff){
+  if (obj[staff[name]] !== undefined) score += obj[staff[name]]; 
+}
+if (score <= 80) return 'kill me now';
+else if ( score < 100) return 'i can handle this';
+else return 'party time!!';
+}
+```
