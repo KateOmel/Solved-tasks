@@ -346,3 +346,20 @@ let score = 0;
   return obj;
 }
 ```
+#### Most valuable character
+```javascript
+function solve(str) {
+let arr = str.split('');
+console.log(arr);
+   let value = 0;
+   const result = [];
+   for (let i = 0; i < arr.length; i++){
+     if ( value < arr.lastIndexOf(arr[i]) - arr.indexOf(arr[i]) ) 
+       { value = arr.lastIndexOf(arr[i]) - arr.indexOf(arr[i])}
+   }  
+   for (let i = 0; i < arr.length; i++){
+   if (arr.lastIndexOf(arr[i]) - arr.indexOf(arr[i]) === value) result.push(arr[i]);
+   }
+   return result.sort()[0];   
+   }
+```
