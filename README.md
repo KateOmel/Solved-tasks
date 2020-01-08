@@ -387,3 +387,12 @@ else if ( score < 100) return 'i can handle this';
 else return 'party time!!';
 }
 ```
+```javascript
+const arrCheck = value => {
+for (let i = 0; i < value.length; i++){
+if ( Array.isArray(value[i])  ) continue;
+else return false;
+}
+return true;
+}
+```
