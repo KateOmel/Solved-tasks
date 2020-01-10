@@ -387,6 +387,7 @@ else if ( score < 100) return 'i can handle this';
 else return 'party time!!';
 }
 ```
+#### Is every value in the array an array?
 ```javascript
 const arrCheck = value => {
 for (let i = 0; i < value.length; i++){
