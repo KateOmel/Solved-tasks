@@ -397,3 +397,9 @@ else return false;
 return true;
 }
 ```
+#### Will you make it?
+```javascript
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return distanceToPump <= mpg * fuelLeft;
+};
+```
