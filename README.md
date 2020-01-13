@@ -403,3 +403,9 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   return distanceToPump <= mpg * fuelLeft;
 };
 ```
+#### Watermelon
+```javascript
+function divide(weight){
+  return (weight % 2 === 0 && weight > 2);
+}
+```
