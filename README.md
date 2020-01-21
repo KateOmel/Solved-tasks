@@ -419,3 +419,14 @@ res += +x[i];
 return res;
 }
 ```
+
+#### Sum Mixed Array
+```javascript
+function sumMix(x){
+let res = 0;
+for (let i = 0; i<x.length; i++){
+res += +x[i];
+}
+return res;
+}
+```
