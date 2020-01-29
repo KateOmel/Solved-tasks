@@ -437,3 +437,12 @@ function describeAge(a) {
   return (a<=12) ? s+'kid': (a<=17) ? s+"teenager": (a<=64) ? s+"adult": s+"elderly";
 }
 ```
+#### Holiday VI - Shark Pontoon
+```javascript
+const shark = (pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) => {
+  let youTime = pontoonDistance / youSpeed
+  let sharkTime = sharkDistance / (dolphin ? sharkSpeed / 2 : sharkSpeed)
+  
+  return sharkTime < youTime ? 'Shark Bait!' : 'Alive!'
+}
+```
