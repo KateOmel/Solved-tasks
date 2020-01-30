@@ -446,12 +446,9 @@ const shark = (pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) =>
   return sharkTime < youTime ? 'Shark Bait!' : 'Alive!'
 }
 ```
-#### Holiday VI - Shark Pontoon
+#### altERnaTIng cAsE <=> ALTerNAtiNG CaSe
 ```javascript
-const shark = (pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) => {
-  let youTime = pontoonDistance / youSpeed
-  let sharkTime = sharkDistance / (dolphin ? sharkSpeed / 2 : sharkSpeed)
-  
-  return sharkTime < youTime ? 'Shark Bait!' : 'Alive!'
+String.prototype.toAlternatingCase = function () {
+    return this.split("").map(a => a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()).join('')
 }
 ```
