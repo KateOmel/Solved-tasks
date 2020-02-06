@@ -419,17 +419,6 @@ res += +x[i];
 return res;
 }
 ```
-
-#### Sum Mixed Array
-```javascript
-function sumMix(x){
-let res = 0;
-for (let i = 0; i<x.length; i++){
-res += +x[i];
-}
-return res;
-}
-```
 #### Be Concise I - The Ternary Operator
 ```javascript
 function describeAge(a) {
@@ -451,4 +440,10 @@ const shark = (pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) =>
 String.prototype.toAlternatingCase = function () {
     return this.split("").map(a => a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()).join('')
 }
+```
+#### No Loops 2 - You only need one
+```javascript
+function check(a,b){
+  return a.includes(b);
+};
 ```
