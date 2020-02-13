@@ -453,6 +453,7 @@ const areaOrPerimeter = function(l , w) {
   return (l === w) ? l*w : 2*(l + w); 
 };
 ```
+#### 
 ```javascript
 function isIsogram(str){
   let alphabet = {
@@ -491,4 +492,11 @@ function isIsogram(str){
   }
  return true;
 }
+```
+#### Jaden Casing Strings
+```javascript
+String.prototype.toJadenCase = function () {
+
+return this.split(' ').map( el => el[0].toUpperCase() + el.slice(1) ).join(' ');
+};
 ```
