@@ -500,3 +500,10 @@ String.prototype.toJadenCase = function () {
 return this.split(' ').map( el => el[0].toUpperCase() + el.slice(1) ).join(' ');
 };
 ```
+#### Will there be enough space?
+```javascript
+function enough(cap, on, wait) {
+  let res = cap - on - wait;
+  return (res < 0)? -res : 0;
+}
+```
