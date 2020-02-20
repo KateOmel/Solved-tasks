@@ -520,16 +520,3 @@ function addLetters(...letters) {
   return res === 0? 'z': String.fromCharCode(res + 96);
 }
 ```
-#### Alphabetical Addition
-```javascript
-function addLetters(...letters) {
- 
-  let res = 0;
-  for (let i = 0; i < letters.length; i++) {
-  if (letters[i] === 'z') continue;
-  res += letters[i].charCodeAt() - 96;
-  }
-  res = res % 26;
-  return res === 0? 'z': String.fromCharCode(res + 96);
-}
-```
