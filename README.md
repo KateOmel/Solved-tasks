@@ -520,3 +520,9 @@ function addLetters(...letters) {
   return res === 0? 'z': String.fromCharCode(res + 96);
 }
 ```
+#### Exclusive "or" (xor) Logical Operator
+```javascript
+function xor(a, b) {
+  return a != b;
+}
+```
