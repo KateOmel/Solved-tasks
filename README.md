@@ -526,9 +526,3 @@ function xor(a, b) {
   return a != b;
 }
 ```
-#### Exclusive "or" (xor) Logical Operator
-```javascript
-function xor(a, b) {
-  return a != b;
-}
-```
