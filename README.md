@@ -532,3 +532,11 @@ function past(h, m, s){
   return (h*60*60 + m*60 + s)*1000;
 }
 ```
+#### Maximum Multiple
+```javascript
+function maxMultiple(divisor, bound){
+  for (let i = bound; i>0; i--) {
+  if (i%divisor === 0) return i;
+  }
+}
+```
