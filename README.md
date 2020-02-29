@@ -540,3 +540,17 @@ function maxMultiple(divisor, bound){
   }
 }
 ```
+#### Bouncing Balls
+```javascript
+function bouncingBall(h,  bounce,  window) {
+if ( h>0 && bounce>0 && bounce <1 && window < h) {
+  let number = 1;
+  h *= bounce;
+  while ( h - window > 0 ) {
+  h *= bounce;
+  number+=2;
+  }
+  return number;
+  }
+  else return -1;
+```
